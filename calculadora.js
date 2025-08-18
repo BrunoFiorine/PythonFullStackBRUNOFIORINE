@@ -18,23 +18,27 @@ console.log("O IMC é: " + imc.toFixed(2));
 
 //
 
-let x = 22
-let y = 18;
-console.log("x é maior que y?" , x > y);
-console.log("x é igual a y?" , x === y);
-
-//
-
-//
-
-let temExperiencia = true;
 let idade = 22;
-let nãoTemExperiencia = false;
-let temExperienciaOuIdade = temExperiencia || idade >= 18;
-console.log("Tem experiência ou é maior de idade?", temExperienciaOuIdade);
-console.log("Não tem experiência?", nãoTemExperiencia);
+let temExperiencia = true;
+let elegivel = (idade>=18) && (tem_experiencia=true);
+console.log("É elegível para a vaga?", elegivel);
 
 
+//
+
+let nivel_acesso = 2;
+
+if (nivel_acesso === 3) {
+    console.log("Acesso Total permitido.");
+}
+else if (nivel_acesso === 2) {
+    console.log("Acesso Parcial permitido.");
+}
+else  {
+    console.log("Acesso Negado.");
+}
+
+//
 
 
 //
@@ -45,20 +49,25 @@ console.log(celsius + "°C é igual a " + fahrenheit + "°F");
 
 //
 
-let numeroPar = 2
-
-switch (numeroPar) {
-    case 1:
-        console.log("Impar");
-        break;
-    case 2:
-        console.log("Par");
-        break;
-    default:
-        console.log("Dia inválido");
-        break;
-
+let inteiro = 10;
+ 
+if (inteiro % 2 === 0) {
+    console.log("O número é par.");
+} else {
+    console.log("O número é ímpar.");
 }
 
+
 //
+
+let peso1 = 20;
+if (peso1 <= 5) {
+    console.log("O Frete é R$ 20 reias");
+} else if (peso1 >= 10) {
+    console.log("O Frete é R$ 30 reias");
+} else {
+    console.log("O Frete é R$ 25 reias");
+}
+//
+
 
