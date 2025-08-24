@@ -1,7 +1,7 @@
 const prompt = require("prompt-sync")();
 
 function mostrarMenu() {
-    console.log("\n--- Opções do Assistente Virtual Hoper ---");
+    console.log("\n--- Opções do Assistente Virtual Roberto Dinamite ---");
     console.log("[1] Quantos anos você tem? (Idade)");
     console.log("[2] Qual o seu time?");
     console.log("[3] Quero saber sobre investimentos?");
@@ -27,7 +27,7 @@ function valorInicial() {
     
 }
 
-const nomeAssistente = "Hoper";
+const nomeAssistente = "Roberto Dinamite";
 console.log(`Olá! Eu sou ${nomeAssistente}, seu assistente virtual`);
 
 const nomeUsuario = prompt("Qual é o seu nome? ");
@@ -46,12 +46,9 @@ mostrarMenu();
         valorInvestimento();
     } else if (opcao === "4") {
         valorInicial();
-        
-    } else if (opcao ==="5") {
+     } else if (opcao ==="5") {
         console.log(`Espero ter ajudado ${nomeUsuario}! Até a próxima! Avalie o meu atendimento!`);
     } else {
         console.log(`Não entendi ${nomeUsuario}! Digite novamente.`);
     }
 }
-
-
